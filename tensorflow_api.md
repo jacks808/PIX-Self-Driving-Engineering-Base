@@ -7,7 +7,7 @@ Tensorflow 目标检测 Demo [地址](https://github.com/tensorflow/models/tree/
 根据配置教程，跑通 TensorFlow 目标检测的 notebook。
 ## 采集训练需要用的真实图片。
 共有三种选择：
-1. 可以上车采集真实的图片，红灯，黄灯，绿灯，还有随机图片。
+1. 可以上车采集真实的图片，红灯，黄灯，绿灯，还有随机图片。（如果选择这个选项，可以试着进入 [配置相关文件](./config_doc.md)，找到`mindvision`相关内容，进行配置）
 2. 也可以网络抓取训练图片。
 3. 可以下载已有的数据集。
 ## 下载打标签的 API
