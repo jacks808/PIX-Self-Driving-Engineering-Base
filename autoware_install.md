@@ -25,13 +25,13 @@
     $ sudo make -j4 
     $ sudo make install
     ```
-- 配置opencv的环境变量
+- 配置 OpenCV 的环境变量
 
-    打开opencv.conf文件： 
+    打开`opencv.conf`文件： 
     ```bash
     $ sudo gedit /etc/ld.so.conf.d/opencv.conf 
     ```
-    在打开的opencv.conf文件中写入：
+    在打开的`opencv.conf`文件中写入：
     ```bash
     $ /usr/local/lib 
     ```
