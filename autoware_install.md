@@ -59,6 +59,7 @@
 
 - 安装 ROS Kinetic
     ```bash
+    $ cd ~
     $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
     $ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
     $ sudo apt-get update
@@ -74,7 +75,7 @@
     ```bash
     $ roscore
     ```
-无错误提示，并正在运行，安装成功
+无错误提示，并正在运行，安装成功！可以按`control + c`终止程序进行下面的安装。
 
 更多资料见 [官网](http://wiki.ros.org/kinetic/Installation/Ubuntu)。
 
