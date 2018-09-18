@@ -98,6 +98,7 @@
     $ cd ..
     $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
     $ ./catkin_make_release
+    $ sudo apt-get install gksu
     ```
 - 运行 Autoware
     ```bash
