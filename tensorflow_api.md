@@ -356,6 +356,7 @@ NUM_CLASSES = 3
 ![green](./img/green.png)
 ![red](./img/red.png)
 ![nothing](./img/nothing.png)
+
 若测试结果很理想，就可以进行下一步，[配置相关文件](./config_doc.md)。
 
 
