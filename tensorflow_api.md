@@ -33,7 +33,7 @@ $ python3 labelImg.py
   -train/
   -test/
 ```
-将图片以及对应的标签`.xml`文件首先放在`img/`文件夹下，并且以推荐比例`7/3`或者`8/2`分别 ** 复制** 在文件夹`train/`和`test/`中。
+将图片以及对应的标签`.xml`文件首先放在`img/`文件夹下，并且以推荐比例`7/3`或者`8/2`分别 **复制** 在文件夹`train/`和`test/`中。
 
 ## 转换数据格式
 从 [这里](https://github.com/datitran/raccoon_dataset) 下载`xml_to_csv.py`与`generate_tfrecord.py`文件，调整相应的代码将数据转换为 TensorFlow 所要求的文件。
