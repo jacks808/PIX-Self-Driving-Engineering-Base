@@ -306,7 +306,7 @@ python3 export_inference_graph.py \
 ```
     
 同样，若执行中出现错误，`no module named 'nets'`，转换地址打开终端，执行：
-在`tensorflow/models/release`目录终端下执行：
+在`tensorflow/models/researh`目录终端下执行：
 
 ```bash
 $ # From tensorflow/models/
