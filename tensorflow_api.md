@@ -132,7 +132,7 @@ $ python3 labelImg.py
 ## 选择 TensorFlow 模型
 从 TensorFlow 模型库中找到合适的 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)，并找到对应的 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) 下载。
 
-将 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) 放在`data/`和`training/`文件夹中，并且解压 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) 文件
+将 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) ，并且解压 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) 文件
 
 
 - 下面以下载的`ssd_inception_v2_coco_2018_01_28.tar.gz`和`ssd_inception_v2_coco.config`为例。
@@ -211,7 +211,7 @@ $ python3 labelImg.py
         label_map_path: "data/object-detection.pbtxt"
         }
         ```
-
+    将改后的`.config`放在`data/`和`training/`文件夹中。
 
 - 在`/training`的文件夹中，加入`object-detection.pbtxt`文件：
 ```
