@@ -17,10 +17,17 @@
 全部放到 `./tl_detector/light_classification/pix/` 中。并将 `./tl_detector` 所有文件夹移动到本地 `/home/up/Autoware/ros/src/`中。
 ## 其他文件
 1. 将 `./styx_msgs/` 移动到 `/home/up/Autoware/ros/src/`
-2. 将 `./mindvision/` 移动到 `/home/up/Autoware/ros/src/`
 3. 将 `./vehicle_sender.cpp` 覆盖到 `/home/up/Autoware/ros/src/socket/packages/vehicle_socket/nodes/vehicle_sender/`
 4. 将 `./launch/` 覆盖到 `/home/up/Autoware/ros/`。
 
+## mindvision 编译 
+```bash
+$ cd ~
+$ sudo su
+$ cd /home/up/Autoware/ros/
+$ source devel/setup.bash
+$ rosrun mindvision mindvision_node
+```
 每次更新文件时，需要进入到`/Autoware/ros/`下，之后重新编译，：
 ```
 $ ./catkin_make_release
