@@ -248,7 +248,7 @@ item {
    -testingimages.xml
  -training
   -object-detection.pbtxt
-  -embedded_ssd_mobilenet_v1_coco.config
+  -ssd_inception_v2_coco.config
  -xml_to_csv.py
  -generate_tfrecord.py
 ```
@@ -257,7 +257,7 @@ item {
 在`legacy/`目录下打开终端：
 
 ```bash
-$ python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/embedded_ssd_mobilenet_v1_coco.config
+$ python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
 ```
 若执行成功，将会看到：
 ```
