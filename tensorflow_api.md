@@ -269,7 +269,7 @@ INFO:tensorflow:global step 11792: loss = 0.7164 (0.378 sec/step)
 INFO:tensorflow:global step 11793: loss = 0.8096 (0.393 sec/step)
 ```
 若执行中出现错误，`no module named 'nets'`，转换地址打开终端，执行：
-在`tensorflow/models/release`目录终端下执行：
+在`<your_path>/models/research`目录终端下执行：
 
 ```bash
 $ # From tensorflow/models/
