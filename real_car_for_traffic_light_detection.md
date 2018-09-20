@@ -17,7 +17,7 @@ $ cd Autoware/ros
 $ source devel/setup.bash
 $ chmod 777 src/tl_detector/tl_detector.py
 $ sudo apt-fast python-pip
-$ pip install tensorflow # 此步骤为在 ROS 下安装 tensorflow python=2.7 
+$ pip install tensorflow -i https://pypi.douban.com/simple # 此步骤为在 ROS 下安装 tensorflow python=2.7 
 $ chmod 777 src/tl_detector/tl_detector.py
 $ roslaunch launch/styx.launch
 ```
