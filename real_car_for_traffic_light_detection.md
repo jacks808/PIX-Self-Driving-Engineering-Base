@@ -12,7 +12,7 @@ $ rosrun mindvision mindvision_node
 ## 打开另一个终端，启动分类器
 下载`styx/`
 ```bash
-$ cp styx/styx.launch <your_path>/ros
+$ cp styx/ <your_path>/ros
 $ source devel/setup.bash
 $ roslaunch launch/styx.launch
 ```
