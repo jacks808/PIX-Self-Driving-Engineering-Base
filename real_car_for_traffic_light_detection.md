@@ -9,9 +9,10 @@ $ sudo su
 $ source devel/setup.bash 
 $ rosrun mindvision mindvision_node 
 ```
-## 打开另一个终端，启动 Udacity 分类器
+## 打开另一个终端，启动分类器
+下载`styx/`
 ```bash
-$ cd CarND-Capstone/ros
+$ cp styx/styx.launch <your_path>/ros
 $ source devel/setup.bash
 $ roslaunch launch/styx.launch
 ```
