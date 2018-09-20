@@ -10,10 +10,15 @@ $ source devel/setup.bash
 $ rosrun mindvision mindvision_node 
 ```
 ## 打开另一个终端，启动分类器
-从根目录下载`styx/`
+从本项目根目录下载`styx_msgs/`
 ```bash
-$ cp styx/ <your_path>/ros
+$ cp styx_msgs/ <your_path>Autoware/ros
+$ cd Autoware/ros
 $ source devel/setup.bash
+$ chmod 777 src/tl_detector/tl_detector.py
+$ sudo apt-fast python-pip
+$ pip install tensorflow # 此步骤为在 ROS 下安装 tensorflow python=2.7 
+$ chmod 777 src/tl_detector/tl_detector.py
 $ roslaunch launch/styx.launch
 ```
 ## 打开另一个终端，启动 Autoware
