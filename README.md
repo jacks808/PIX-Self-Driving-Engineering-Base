@@ -57,7 +57,7 @@
 - [终端远程使用指南](./remote.md)
 - [安装提速](./speed_up_install.md)
 
-## 首期实训增加最终测评标准，详情请点击 [这里](./performance_rules.md)。
+## 首期实训新增最终测评标准，详情请点击 [这里](./performance_rules.md)。
 
 ## FAQ
 ### 此次无人驾驶工程师线下实训由谁举办？
