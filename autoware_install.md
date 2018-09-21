@@ -97,6 +97,7 @@
     $ catkin_init_workspace
     $ cd ..
     $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+    $ sudo apt-get install ros-kinetic-jsk-recognition
     $ ./catkin_make_release
     $ sudo apt-get install gksu
     ```
