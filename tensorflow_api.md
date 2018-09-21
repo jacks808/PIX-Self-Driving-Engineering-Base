@@ -22,11 +22,11 @@ $ sudo pip3 install lxml
 $ make qt5py3
 $ python3 labelImg.py
 ```
-之后你会打开一个 GUI 程序，并按照 github 说明进行图片的打标签工作。
+之后你会打开一个 GUI 程序，并按照 [github]((https://github.com/tzutalin/labelImg)) 说明进行图片的打标签工作。
 
 最终会导出图片对应的 `.xml` 文件。
 
-之后建立文件夹树，
+之后个人手动建立文件夹树，
 ```
 -object_detection/
  -images/
@@ -34,6 +34,20 @@ $ python3 labelImg.py
   -test/
 ```
 将图片以及对应的标签`.xml`文件首先放在`img/`文件夹下，并且以推荐比例`7/3`或者`8/2`分别 **复制** 在文件夹`train/`和`test/`中。
+
+之后的文件夹树为：
+```
+-object_detection/
+ -images/
+  +train/
+  +test/
+  img1.jpg
+  img1.xml
+  img2.jpg
+  img2.xml
+  ...
+```
+在各自的`train/`与`test/`文件夹下也有一套图像和标签。
 
 ## 转换数据格式
 从 [这里](https://github.com/datitran/raccoon_dataset) 下载`xml_to_csv.py`与`generate_tfrecord.py`文件，调整相应的代码将数据转换为 TensorFlow 所要求的文件。
@@ -132,7 +146,7 @@ $ python3 labelImg.py
 ## 选择 TensorFlow 模型
 从 TensorFlow 模型库中找到合适的 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)，并找到对应的 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) 下载。
 
-将 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) ，并且解压 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) 文件
+改写 [config 文件](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) ，选择 [模型](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) 文件
 
 
 - 下面以下载的`ssd_inception_v2_coco_2018_01_28.tar.gz`和`ssd_inception_v2_coco.config`为例。
@@ -211,7 +225,7 @@ $ python3 labelImg.py
         label_map_path: "data/object-detection.pbtxt"
         }
         ```
-    将改后的`.config`放在`data/`和`training/`文件夹中。
+    将改后的`ssd_inception_v2_coco.config`放在`data/`和`training/`文件夹中。
 
 - 在`/training`的文件夹中，加入`object-detection.pbtxt`文件：
 ```
@@ -268,11 +282,16 @@ INFO:tensorflow:global step 11791: loss = 0.7758 (0.460 sec/step)
 INFO:tensorflow:global step 11792: loss = 0.7164 (0.378 sec/step)
 INFO:tensorflow:global step 11793: loss = 0.8096 (0.393 sec/step)
 ```
+若执行中出现有关`object_detection`错误时，在`<your_path>/models/research/`路径下，执行
+
+```bash
+$ python3 setup.py build
+$ python3 setup.py install
+```
 若执行中出现错误，`no module named 'nets'`，转换地址打开终端，执行：
 在`<your_path>/models/research`目录终端下执行：
 
 ```bash
-$ # From tensorflow/models/
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 # switch back to object_detection after this and re run the above command
 ```
@@ -285,7 +304,7 @@ $ tensorboard --logdir='training/'
 ![tensorboard](./img/tensorboard.png)
 
 ## 输出
-将自己新建的`/object_detection`中的内容放入到 [官网](https://github.com/tensorflow/models/tree/master/research/object_detection) 中进行合并。可以找到其中`export_inference_graph.py`的文件。
+将自己新建的`/object_detection`中的内容放入到`<your_path>/models/research/object_detection/`中进行合并。可以找到其中`export_inference_graph.py`的文件。
 - 原代码
 ```
 python export_inference_graph \
