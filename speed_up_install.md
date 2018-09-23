@@ -22,3 +22,4 @@
   ```bash
   pip install <package> -i https://pypi.douban.com/simple
   ```
+## `wget`
