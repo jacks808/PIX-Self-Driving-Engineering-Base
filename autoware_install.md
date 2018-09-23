@@ -19,9 +19,9 @@
     $ sudo apt-get install cmake
     $ unzip 2.4.10.zip
     $ cd opencv-2.4.10
-    $ mkdir release 
-    $ cd release 
-    $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+    $ mkdir build 
+    $ cd build 
+    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
     $ sudo make -j4 
     $ sudo make install
     ```
