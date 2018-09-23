@@ -23,3 +23,28 @@
   pip install <package> -i https://pypi.douban.com/simple
   ```
 ## `wget`
+`wget`的加速用`mwget`替代
+  - 首先安装 `mwget`
+  ```bash
+  $ wget http://jaist.dl.sourceforge.net/project/kmphpfm/mwget/0.1/mwget_0.1.0.orig.tar.bz2
+  $ tar -xjvf mwget_0.1.0.orig.tar.bz2
+  ```
+  - 执行`.configure`
+  ```bash
+  $ cd mwget_0.1.0.orig
+  $ ./configure
+  ```
+    - 如果出现`error: C++ compiler cannot create executables` 说明没有安装c++编译器
+    ```bash
+    $ apt-get install gcc-c++
+    ```
+    - 如果出现`configure: error: Your intltool is too old.  You need intltool 0.35.0 or later.`，需要安装 0.35.0 以上的版本的`intltool`
+    ```bash
+    $ sudo apt-get update intltool
+    ```
+  - 最后安装
+  ```bash
+  $ make
+  $ make install
+  ```
+  安装完毕后，可以使用`mwget`下载。    
