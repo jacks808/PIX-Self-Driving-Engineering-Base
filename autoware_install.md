@@ -10,15 +10,15 @@
     $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
     $ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
     ```
-- 下载对应版本的 OpenCV
+- 下载 OpenCV
     ```bash
-    $ sudo wget https://github.com/Itseez/opencv/archive/2.4.10.zip
+    $ sudo wget https://github.com/Itseez/opencv/archive/3.4.2.zip
     ```
 - 编译 OpenCV
     ```bash
     $ sudo apt-get install cmake
-    $ unzip 2.4.10.zip
-    $ cd opencv-2.4.10
+    $ unzip 3.4.2.zip
+    $ cd opencv-3.4.2
     $ mkdir build 
     $ cd build 
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
