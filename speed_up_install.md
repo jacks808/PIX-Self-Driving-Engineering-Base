@@ -34,13 +34,13 @@
   $ cd mwget_0.1.0.orig
   $ ./configure
   ```
-    - 如果出现`error: C++ compiler cannot create executables` 说明没有安装c++编译器
-    ```bash
-    $ apt-get install gcc-c++
-    ```
-    - 如果出现`configure: error: Your intltool is too old.  You need intltool 0.35.0 or later.`，需要安装 0.35.0 以上的版本的`intltool`
-    ```bash
-    $ sudo apt-get update intltool
+  - 如果出现`error: C++ compiler cannot create executables` 说明没有安装c++编译器
+  ```bash
+  $ apt-get install gcc-c++
+  ```
+  - 如果出现`configure: error: Your intltool is too old.  You need intltool 0.35.0 or later.`，需要安装 0.35.0 以上的版本的`intltool`
+  ```bash
+  $ sudo apt-get update intltool
     ```
   - 最后安装
   ```bash
