@@ -23,6 +23,16 @@
   ```bash
   pip install <package> -i https://pypi.douban.com/simple
   ```
+## `github`
+  - 打开`host`文件
+  ```bash
+  sudo gedit /etc/housts
+  ```
+  - 修改`host`文件
+  ```bash
+  151.101.72.249 github.global.ssl.fastly.net
+  192.30.253.112 github.com
+  ```
 ## `wget`
 `wget`的加速用`mwget`替代
   - 首先安装 `mwget`
