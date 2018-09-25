@@ -7,6 +7,7 @@
 ### 显卡驱动
 以安装 Nvidia 驱动 396.54 为例：
 ```bash
+$ cd ~
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
 ```
 遇到提示按`Enter`
