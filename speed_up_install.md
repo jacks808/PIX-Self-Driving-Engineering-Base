@@ -3,6 +3,7 @@
   - 添加软件源并安装
 
   ```bash
+  $ cd ~
   $ sudo add-apt-repository ppa:apt-fast/stable
   $ sudo apt-get update
   $ sudo apt-get -y install apt-fast
