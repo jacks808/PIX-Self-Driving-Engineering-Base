@@ -17,7 +17,7 @@
 - 编译 OpenCV
     ```bash
     $ sudo apt-get install cmake
-    $ unzip 3.4.2.zip
+    $ unzip opencv-3.4.2.zip
     $ cd opencv-3.4.2
     $ mkdir build 
     $ cd build 
