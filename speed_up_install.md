@@ -41,9 +41,9 @@
   - 如果出现`configure: error: Your intltool is too old.  You need intltool 0.35.0 or later.`，需要安装 0.35.0 以上的版本的`intltool`
   ```bash
   $ sudo apt-get install intltool
-    ```
+  ```
     
-- 最后安装
+  - 最后安装
 
   ```bash
   $ make
