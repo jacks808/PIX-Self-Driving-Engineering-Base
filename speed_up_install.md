@@ -42,7 +42,9 @@
   ```bash
   $ sudo apt-get install intltool
     ```
+    
 - 最后安装
+
   ```bash
   $ make
   $ sudo make install
