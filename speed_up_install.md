@@ -45,6 +45,6 @@
 - 最后安装
   ```bash
   $ make
-  $ make install
+  $ sudo make install
   ```
   安装完毕后，可以使用`mwget`下载。    
