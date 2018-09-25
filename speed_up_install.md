@@ -23,7 +23,7 @@
   ```bash
   pip install <package> -i https://pypi.douban.com/simple
   ```
-## `github`
+## `github clone`
   - 打开`host`文件
   ```bash
   sudo gedit /etc/housts
