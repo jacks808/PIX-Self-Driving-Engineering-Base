@@ -26,7 +26,7 @@
 ## `github clone`
   - 打开`host`文件
   ```bash
-  sudo gedit /etc/housts
+  sudo gedit /etc/hosts
   ```
   - 修改`host`文件
   ```bash
